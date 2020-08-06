@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<style>
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button
+{
+  width: 150px;
+  text-align: center;
+  margin:0 auto;
+}
+</style>
+
+<center><h1>Book List</h1></center>
+<table border="2" width="80%" align="center">
+    <tr bgcolor="#9e0020">
+        <th style="color:#003d9e">Book Id</th>
+        <th style="color:#003d9e">Name</th>
+        <th style="color:#003d9e">Author</th>
+        <th style="color:#003d9e">Publications</th>
+        <th style="color:#003d9e">Flag</th>
+        <th style="color:#003d9e">Created_By</th>
+        <th style="color:#003d9e">Created_date</th>
+        <th style="color:#003d9e">Modified_By</th>
+        <th style="color:#003d9e">Modified_Date</th>
+
+    </tr>
+{% for rec_val in list1 %}
+    <tr>
+        <td style="color:#4287f5">{{rec_val[0]}}</td>
+        <td style="color:#4287f5">{{rec_val[1]}}</td>
+        <td style="color:#4287f5">{{rec_val[2]}}</td>
+        <td style="color:#4287f5">{{rec_val[3]}}</td>
+        <td style="color:#4287f5">{{rec_val[4]}}</td>
+        <td style="color:#4287f5">{{rec_val[5]}}</td>
+        <td style="color:#4287f5">{{rec_val[6]}}</td>
+        <td style="color:#4287f5">{{rec_val[7]}}</td>
+        <td style="color:#4287f5">{{rec_val[7]}}</td>
+
+    </tr>
+ {% endfor %}
+</table>
+<br>
+<form action="/" method="GET">
+    <div class="button">
+    <input type="submit" value="back">
+</form>
+<br>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+<style>
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<center><h1>Add New Book to the Database</h1></center>
+<form action="http://localhost:5000/add_books" method="POST">
+    <fieldset>
+        <legend>Enter Vales</legend>
+            <p> Book ID : <input type="text" name="book_id" /> </p>
+            <p> Book Name: <input type="text" name="name" /> </p>
+            <p> Author Name: <input type="text" name="author" /> </p>
+            <p> Publisher : <input type="text" name="publications" /> </p>
+            <p> Flag Value : <input type="text" name="flag" /> </p>
+            <p> Created By : <input type="text" name="created_by" /> </p>
+            <p> Created Date : <input type="text" name="created_date" /> </p>
+            <p> Modified By : <input type="text" name="modified_by" /> </p>
+            <p> Modified Date : <input type="text" name="modified_date" /> </p>
+            <p> <input type="submit" value="Add" /> </p>
+    </fieldset>
+</form>
+
+<form action="/" method="GET">
+    <input type="submit" value="back">
+</form>
+
+</body>
+</html>
